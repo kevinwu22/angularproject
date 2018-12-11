@@ -7,7 +7,6 @@ import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/fire
 
 export interface Board {
   id: string 
-  // updated id?:
   author: string
   description: string
   title: string
