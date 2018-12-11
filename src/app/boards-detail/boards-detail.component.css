@@ -1,0 +1,39 @@
+.example-card {
+    max-width: 500px;
+    
+  }
+  
+  .button-row {
+    margin: 10px 0;
+  }
+  
+  .edit-btn {
+    margin: 0 20px 20px;
+  }
+
+  .btn-primary-delete {
+    color: #fff;
+    background-color: rgb(184, 53, 53);
+    border-color:  rgb(184, 53, 53);
+
+  }
+
+  .btn-primary-edit {
+    color: #fff;
+    background-color: rgb(53, 66, 184);
+    border-color:  rgb(53, 66, 184);
+
+  }
+
+  .buttons {
+    display: flex;
+    width: 110px;
+    justify-content: space-between;
+    float: right;
+
+  }
+
+ #profile {
+    font-size: 18px;
+    width: 500px;
+  }
