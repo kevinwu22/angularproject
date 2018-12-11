@@ -26,7 +26,7 @@ export class BoardsCreateComponent implements OnInit {
     this.boardsForm = this.formBuilder.group({
       name: [null, Validators.required],
       email: [null, Validators.email],
-      phone: [null, Validators.required]
+      phone: [null, [Validators.required, Validators.minLength(10), Validators.maxLength(10)]]
     });
   }
 

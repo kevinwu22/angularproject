@@ -13,7 +13,7 @@
     <textarea matInput placeholder="Email" formControlName="email"> </textarea>
     <mat-error>
       <span *ngIf="!boardsForm.get('email').valid && boardsForm.get('email').touched">
-        Please enter your Email Address
+        Please enter a valid email address
       </span>
     </mat-error>
   </mat-form-field>
@@ -22,7 +22,7 @@
     <input matInput placeholder="Phone" formControlName="phone" />
     <mat-error>
       <span *ngIf="!boardsForm.get('phone').valid && boardsForm.get('phone').touched">
-        Please enter your Phone Number
+        Please enter a valid phone number
       </span>
     </mat-error>
   </mat-form-field>
