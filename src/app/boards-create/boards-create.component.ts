@@ -25,7 +25,7 @@ export class BoardsCreateComponent implements OnInit {
   ngOnInit() {
     this.boardsForm = this.formBuilder.group({
       name: [null, Validators.required],
-      email: [null, Validators.required],
+      email: [null, Validators.email],
       phone: [null, Validators.required]
     });
   }
