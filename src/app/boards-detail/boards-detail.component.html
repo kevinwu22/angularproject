@@ -1,0 +1,50 @@
+<mat-card class="example-card">
+  <!-- <mat-card-header>
+    <mat-card-title><h2>{{board.name}}</h2></mat-card-title>
+    <mat-card-subtitle>{{board.email}}</mat-card-subtitle>
+  </mat-card-header> -->
+  <mat-card-content>
+          <table id="profile">
+              <tr>
+                <th>Contact</th>
+              </tr>
+              <tr>
+                <td>Name:</td>
+                <td>{{board.name}}</td>         
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td>{{board.email}}</td>
+              </tr>
+              <tr>
+                  <td>Phone:</td>
+                  <td>{{board.phone}}</td>
+                </tr>
+              </table>
+
+    <!-- <dl>
+      <dt>Name:</dt>{{board.name}}
+      <dd>{{board.name}}</dd>
+      <dt>Email:</dt>
+      <dd>{{board.email}}</dd>
+      <dt>Phone:</dt>
+      <dd>{{board.phone}}</dd>
+    </dl> -->
+  </mat-card-content>
+  <mat-card-actions>
+    <div class="buttons">
+      <!-- <a mat-fab color="primary" [routerLink]="['/boards-edit', id]"><mat-icon>edit</mat-icon></a> -->
+      <div class="button-row">
+          <button type="button" class="btn-primary-edit" [routerLink]="['/boards-edit', id]"> Edit 
+          </button>
+        </div>
+      <!-- <a mat-fab color="warn" (click)="deleteBoard(id)"><mat-icon>delete</mat-icon></a> -->
+
+      <div class="button-row">
+          <button type="button" class="btn-primary-delete" (click)="deleteBoard(id)">Delete
+          </button>
+        </div>
+      </div>
+
+    </mat-card-actions>
+  </mat-card>
