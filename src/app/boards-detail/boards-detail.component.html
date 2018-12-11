@@ -41,7 +41,7 @@
       <!-- <a mat-fab color="warn" (click)="deleteBoard(id)"><mat-icon>delete</mat-icon></a> -->
 
       <div class="button-row">
-          <button type="button" class="btn-primary-delete" (click)="deleteBoard(id)">Delete
+          <button type="button" class="btn-primary-delete" onClick="return confirm('Are you sure you want to delete?')" (click)="deleteBoard(id)">Delete
           </button>
         </div>
       </div>
